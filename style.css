@@ -1,0 +1,91 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*, :after, :before { box-sizing: border-box; }
+
+
+body {
+    background: linear-gradient(#615dad, #ffc8da);
+    height: 200%;
+}
+
+.profil {
+    margin: auto;
+    width: 250px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    background-color: #283e50;
+    color: #bdc3c7;
+
+}
+
+.hlavicka {
+    position: relative;
+}
+
+.uvodni {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.nadpis {
+  text-align: center;
+  font-family: "Lobster";
+}
+
+
+.obsah {
+    padding: 30px 20px 20px 20px;
+}
+
+
+.odkazy {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #ffffff;
+}
+
+
+.odkazy li {
+    display: block;
+}
+
+.pravidla {
+    width: 100%;
+    border-top: 1px solid #3f464d;
+    border-bottom: 1px solid #3f464d;
+}
+
+.zahrej {
+    width: 100%;
+    border-bottom: 1px solid #3f464d;
+}
+
+
+.odkazy a {
+    display: block;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    col
+
+  }
+
+
+  .pravidla {
+    background-color: #1fcca4;
+      }
+
+  .zahrej {
+    background-color: #0197f6;
+  }
+
+
+.pravidla a:hover {
+    background-color: #1cbb96;
+}
+.zahrej a:hover {
+    background-color: #0090e9;
+}

@@ -1,91 +1,199 @@
-/* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    height:100%;
+  }
+
 
 
 body {
-    background: linear-gradient(#615dad, #ffc8da);
-    height: 200%;
-}
-
-.profil {
-    margin: auto;
-    width: 250px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    background-color: #283e50;
-    color: #bdc3c7;
-
-}
-
-.hlavicka {
-    position: relative;
-}
-
-.uvodni {
-    display: block;
+	font-family: Arial, sans-serif, sans-serif;
+	font-size: 18px;
+	background-image: linear-gradient(#615dad, #ffc8da);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-attachment: fixed;
+
+
+ }
+
+ .piskvorky {
+	position: relative;
+	width: 450px;
+    height: 750px;
+	margin: 100px auto 100px auto;
+	padding: 30px;
+	background-color: #283e50;
+	border-radius: 10px 10px 0 0;
+
 }
 
-.nadpis {
-  text-align: center;
-  font-family: "Lobster";
+.obrazek {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+h1 {
+
+    font-family: Lobster;
+	font-size: 40px;
+	margin-bottom: 20px;
+	color: #ffffff;
+    margin-top: 320px;
+    text-align: center;
 }
 
 
-.obsah {
-    padding: 30px 20px 20px 20px;
+p {
+    color: white;
+    text-align: left;
+    /*width: 1em; height: 1em;*/
+}
+
+.uvodni-text {
+    text-align: center;
+}
+
+.tlacitka {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
 }
 
 
-.odkazy {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    color: #ffffff;
-}
+
+.tlacitka a {
 
 
-.odkazy li {
-    display: block;
+	padding: 18px 22px;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+
 }
+
+.Pravidla {
+	background-color:  #1fcca4;
+    margin-bottom: 2px;
+}
+.Pravidla:hover {
+	background-color: #1cbb96;
+}
+
+.Začít {
+	background-color: #0197f6;
+}
+
+.Začít:hover {
+	background-color: #0090e9;
+}
+
+.Úvodní {
+	background-color:  #1fcca4;
+    margin-bottom: 2px;
+}
+.Úvodní:hover {
+	background-color: #1cbb96;
+}
+
+.Začít {
+	background-color: #0197f6;
+}
+
+.Začít:hover {
+	background-color: #0090e9;
+}
+
 
 .pravidla {
-    width: 100%;
-    border-top: 1px solid #3f464d;
-    border-bottom: 1px solid #3f464d;
+    position: relative;
+	width: 450px;
+    /*height: auto;*/
+	margin: 100px auto 100px auto;
+	padding: 30px;
+	background-color: #283e50;
+	border-radius: 10px 10px 0 0;
+
+
 }
 
-.zahrej {
-    width: 100%;
-    border-bottom: 1px solid #3f464d;
-}
-
-
-.odkazy a {
-    display: block;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+.nadpis-pravidla {
+    font-family: Lobster;
+	font-size: 60px;
+	margin-bottom: 20px;
+	color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    text-decoration: none;
-    col
-
-  }
-
-
-  .pravidla {
-    background-color: #1fcca4;
-      }
-
-  .zahrej {
-    background-color: #0197f6;
-  }
-
-
-.pravidla a:hover {
-    background-color: #1cbb96;
 }
-.zahrej a:hover {
-    background-color: #0090e9;
+
+.pravidla-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.figures {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 30px;
+
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.figure {
+    justify-content:center;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+@media screen and (min-width: 880px) {
+
+    .pravidla {
+        width: 880px;
+    }
+
+    .figures {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+    }
+
+    .figure {
+
+       flex-basis: calc((100% - 40px) / 2);
+       margin: 0;
+
+    }
 }

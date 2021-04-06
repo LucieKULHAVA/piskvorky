@@ -58,7 +58,7 @@ p {
     /*width: 1em; height: 1em;*/
 }
 
-.uvodni-text {
+.uvodniText {
     text-align: center;
 }
 
@@ -93,27 +93,27 @@ p {
 	background-color: #1cbb96;
 }
 
-.Začít {
+.zacit {
 	background-color: #0197f6;
 }
 
-.Začít:hover {
+.zacit:hover {
 	background-color: #0090e9;
 }
 
-.Úvodní {
+.uvodni {
 	background-color:  #1fcca4;
     margin-bottom: 2px;
 }
-.Úvodní:hover {
+.uvodni:hover {
 	background-color: #1cbb96;
 }
 
-.Začít {
+.zacit {
 	background-color: #0197f6;
 }
 
-.Začít:hover {
+.zacit:hover {
 	background-color: #0090e9;
 }
 
@@ -130,7 +130,7 @@ p {
 
 }
 
-.nadpis-pravidla {
+.nadpisPravidla {
     font-family: Lobster;
 	font-size: 60px;
 	margin-bottom: 20px;
@@ -140,7 +140,7 @@ p {
     text-align: center;
 }
 
-.pravidla-text {
+.pravidlaText {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -149,7 +149,7 @@ p {
     margin-right: 20px;
 }
 
-.figures {
+.policka {
 
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@ img {
     max-width: 100%;
 }
 
-.figure {
+.policko {
     justify-content:center;
     color: white;
     font-style: italic;
@@ -182,7 +182,7 @@ img {
         width: 880px;
     }
 
-    .figures {
+    .policka {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -190,7 +190,7 @@ img {
 
     }
 
-    .figure {
+    .policko {
 
        flex-basis: calc((100% - 40px) / 2);
        margin: 0;

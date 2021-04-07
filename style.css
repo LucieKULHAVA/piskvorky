@@ -14,9 +14,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     background-attachment: fixed;
-
+    
 
  }
 
@@ -38,13 +38,13 @@ body {
     width: 450px;
     height: 300px;
     border-radius: 10px 10px 0 0;
-
+    
 }
 
 h1 {
-
+    
     font-family: Lobster;
-	font-size: 40px;
+	font-size: 60px;
 	margin-bottom: 20px;
 	color: #ffffff;
     margin-top: 320px;
@@ -58,7 +58,7 @@ p {
     /*width: 1em; height: 1em;*/
 }
 
-.uvodniText {
+.uvodni-text {
     text-align: center;
 }
 
@@ -69,20 +69,20 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-
+    
+    
 }
 
 
 
 .tlacitka a {
-
-
+	
+  
 	padding: 18px 22px;
 	text-decoration: none;
 	text-align: center;
 	color: #ffffff;
-
+    
 }
 
 .Pravidla {
@@ -93,27 +93,27 @@ p {
 	background-color: #1cbb96;
 }
 
-.zacit {
+.Začít {
 	background-color: #0197f6;
 }
 
-.zacit:hover {
+.Začít:hover {
 	background-color: #0090e9;
 }
 
-.uvodni {
+.Úvodní {
 	background-color:  #1fcca4;
     margin-bottom: 2px;
 }
-.uvodni:hover {
+.Úvodní:hover {
 	background-color: #1cbb96;
 }
 
-.zacit {
+.Začít {
 	background-color: #0197f6;
 }
 
-.zacit:hover {
+.Začít:hover {
 	background-color: #0090e9;
 }
 
@@ -127,10 +127,10 @@ p {
 	background-color: #283e50;
 	border-radius: 10px 10px 0 0;
 
-
+    
 }
 
-.nadpisPravidla {
+.nadpis-pravidla {
     font-family: Lobster;
 	font-size: 60px;
 	margin-bottom: 20px;
@@ -140,7 +140,7 @@ p {
     text-align: center;
 }
 
-.pravidlaText {
+.pravidla-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -149,7 +149,7 @@ p {
     margin-right: 20px;
 }
 
-.policka {
+.figures {
 
     display: flex;
     flex-direction: column;
@@ -161,12 +161,12 @@ p {
 }
 
 
-
-img {
+ 
+img { 
     max-width: 100%;
 }
 
-.policko {
+.figure {
     justify-content:center;
     color: white;
     font-style: italic;
@@ -182,15 +182,15 @@ img {
         width: 880px;
     }
 
-    .policka {
+    .figures { 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        
 
     }
 
-    .policko {
+    .figure {
 
        flex-basis: calc((100% - 40px) / 2);
        margin: 0;

@@ -1,199 +1,140 @@
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
-
-html {
-    height:100%;
-  }
-
-
-
 body {
-	font-family: Arial, sans-serif, sans-serif;
-	font-size: 18px;
-	background-image: linear-gradient(#615dad, #ffc8da);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%; 
-    background-attachment: fixed;
-    
-
- }
-
- .piskvorky {
-	position: relative;
-	width: 450px;
-    height: 750px;
-	margin: 100px auto 100px auto;
-	padding: 30px;
-	background-color: #283e50;
-	border-radius: 10px 10px 0 0;
-
-}
-
-.obrazek {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 450px;
-    height: 300px;
-    border-radius: 10px 10px 0 0;
-    
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  margin: 0;
 }
 
 h1 {
-    
-    font-family: Lobster;
-	font-size: 60px;
-	margin-bottom: 20px;
-	color: #ffffff;
-    margin-top: 320px;
-    text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 16px;
+  text-align: center;
+  font-weight: 500;
 }
-
 
 p {
-    color: white;
-    text-align: left;
-    /*width: 1em; height: 1em;*/
+  padding-top: 10px;
+  padding-bottom: 17px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.uvodni-text {
-    text-align: center;
+.piskvorky {
+  max-width: 370px;
+  box-shadow: 0px 0px 20px 0px rgba(154, 130, 184, 0.44);
+  margin-top: 80px;
+  margin-bottom: 50px;
 }
 
-.tlacitka {
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-    
+.uvodni img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  display: block;
 }
 
-
-
+.obsah {
+  background-color: #283e50;
+  text-align: center;
+  padding: 13px;
+  line-height: 1.5;
+}
 .tlacitka a {
-	
-  
-	padding: 18px 22px;
-	text-decoration: none;
-	text-align: center;
-	color: #ffffff;
-    
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
 }
-
-.Pravidla {
-	background-color:  #1fcca4;
-    margin-bottom: 2px;
-}
-.Pravidla:hover {
-	background-color: #1cbb96;
-}
-
-.Začít {
-	background-color: #0197f6;
-}
-
-.Začít:hover {
-	background-color: #0090e9;
-}
-
-.Úvodní {
-	background-color:  #1fcca4;
-    margin-bottom: 2px;
-}
-.Úvodní:hover {
-	background-color: #1cbb96;
-}
-
-.Začít {
-	background-color: #0197f6;
-}
-
-.Začít:hover {
-	background-color: #0090e9;
-}
-
 
 .pravidla {
-    position: relative;
-	width: 450px;
-    /*height: auto;*/
-	margin: 100px auto 100px auto;
-	padding: 30px;
-	background-color: #283e50;
-	border-radius: 10px 10px 0 0;
-
-    
+  background-color: #1fcca4;
+  border-bottom: #283e50 solid 1px;
 }
 
-.nadpis-pravidla {
-    font-family: Lobster;
-	font-size: 60px;
-	margin-bottom: 20px;
-	color: #ffffff;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+.pravidla:hover {
+  background-color: #1cbb96;
 }
 
-.pravidla-text {
+.zacitHrat {
+  background-color: #0197f6;
+}
+
+.zacitHrat:hover {
+  background-color: #0090e9;
+}
+
+.piskvorky--rules {
+  max-width: 370px;
+  box-shadow: 0px 0px 20px 0px rgba(154, 130, 184, 0.44);
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.pravidlatxt {
+  background-color: #283e50;
+  text-align: left;
+  padding: 13px;
+  line-height: 1.5;
+  border-radius: 4px 4px 0 0;
+}
+
+ol {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+
+ol > li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.describe {
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.describe-img {
+  max-width: 100%;
+}
+
+.symbol {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
+figure {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+@media (min-width: 750px) {
+  .piskvorky--rules {
+    max-width: 740px;
+    font-size: 1.2em;
+  }
+
+  .instruction {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.figures {
-
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-    margin-top: 30px;
+    flex-basis: calc((100% - 20px) / 2);
+    justify-content: space-around;
+  }
 
-}
-
-
- 
-img { 
-    max-width: 100%;
-}
-
-.figure {
-    justify-content:center;
-    color: white;
-    font-style: italic;
-    text-align: center;
-    padding: 15px;
-
-}
-
-
-@media screen and (min-width: 880px) {
-
-    .pravidla {
-        width: 880px;
-    }
-
-    .figures { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-
-    }
-
-    .figure {
-
-       flex-basis: calc((100% - 40px) / 2);
-       margin: 0;
-
-    }
+  .describe,
+  .foto {
+    width: 340px;
+  }
 }

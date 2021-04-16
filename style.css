@@ -137,7 +137,7 @@ figure {
   .foto {
     width: 340px;
   }
-
+ }
 
 h3 {
   font-family: 'Lobster', cursive;
@@ -234,4 +234,4 @@ filter:invert(100%);
 .hra {
  max-width: 80vmin;
     }
-}
+

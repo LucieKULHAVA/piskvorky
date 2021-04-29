@@ -13,13 +13,13 @@ let symbol = document.querySelector('.kolecko');
       
        ctverecek.classList.add('board__field--circle');   
        hraje = 'cross';
-       symbol.src = 'images/cross.svg';
+       symbol.src = 'cross.svg';
        ctverecek.disabled = true;
      }
      else if (hraje === "cross") {
        ctverecek.classList.add("board__field--cross");
        hraje = "circle";
-       symbol.src = "images/circle.svg";
+       symbol.src = "circle.svg";
       ctverecek.disabled = true;
     
      }

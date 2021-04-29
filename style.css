@@ -142,99 +142,139 @@ figure {
     width: 340px;
   }
 
-  h5 {
-  font-family: 'Lobster', cursive;
-  font-size: 60px;
-  margin: 20px;
-  margin-left:500px;
+.kontejner {
+    display: flex;
+    justify-content: center;
+    /*padding-left: 10vmin;*/
+    align-items: center;
+    
 }
 
-.strankaHry{
-  width: 80vw; 
-  height: 80vw
-}
 
-.hraje {
-  color:white;
-  font-size: 30px;
-  padding-left:10px;
-}
-
-.domecek {
-  background-color:#1fcca4;
-  padding: 20px 30px;
-  font-size: 10px;
-  margin: 4px;
-  width: 8%;
-  border-radius:6px;
-}
-
-.domecek:hover, :focus {
-    background-color: #1cbb96;
-  }
-
-.klikRestart {
-  background-color: #0197f6;
-  color: white;
-  padding: 20px 30px;
-  font-size: 10px;
-  margin: 4px;
-  width: 8%;
-  border-radius:6px;
-}
-
-.klikRestart:hover, :focus {
-  background-color:  #0090e9;
-}
-
-.text {
-  display:flex;
-  justify-content:space-between;
-  width: 80vw;
-  margin-left:110px;
-}
-
-.buttonPress {
-  width: 10%;
-  border: 1px solid;
-  margin:0;
-  padding:0;
-  background-color: rgb(255,105,180, 0.3);
-}
-
-.buttonPress:hover {
- background-color: rgb(255,105,180, 0.5);
-}
-
-.obrazky {
-  display:flex;
-  justify-content:flex-end;
-  margin-bottom: 30px;
-  margin-left:500px;
-}
-
-.buttony {
- display: flex; 
- flex-wrap: wrap; 
- width: 80vw; 
- height: 80vw;
- margin-left:110px;
-    }
-
-  .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-position: center;
-    }
-
-.circle {
-width: 0.7em;
-height: 0.7em;
-filter:invert(100%);
-    }
 
 .hra {
- max-width: 80vmin;
-    }
+    max-width: 80vmin;
+    justify-content: center;
+    font-weight: bold;
+    margin: 30px auto 30px auto;
+    
+    
+}
 
+
+.hra__nadpis {
+    margin-top: 50px;
+    font-size: 12vmin;
+
+}
+
+.hra__ikonky {
+
+    position: relative;
+    /*font-size: 4vmin;*/
+
+    
+    
+}
+
+.hra__ikonky--vpravo {
+ position: absolute;
+ top: 0;
+ right: 5px;
+
+
+}
+
+.ikonka__home, .ikonka__restart {
+    display: inline-block;
+    /*padding: 10px;*/
+    border-radius: 5px;
+    /*width: 7vmin;
+    height: 7vmin;*/
+    /*cursor: pointer;*/
+    
+
+}
+
+.ikonka__home {
+
+    background-color:  #1fcca4;
+    padding: 10px 12px 10px 12px;
+    
+}
+
+.ikonka__home:hover,
+.ikonka__home:focus {
+    background-color: #1cbb96;
+    
+
+}
+
+
+.ikonka__restart {
+
+    background-color: #0197f6;
+    padding: 10px 12px 10px 12px;
+}
+
+.ikonka__restart:hover,
+.ikonka__restart:focus {
+    background-color: #0090e9;
+}
+
+
+
+.hra__policka {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 5px 1px rgba(17, 16, 16, 0.4);
+   
+}
+
+.hra__policka button {
+  border: 1px solid rgb(20, 18, 18);
+  background-color: rgba(111, 90, 112, 0.3);
+  /*flex-basis: 10%;
+  padding: 27px;
+  width: 10%;*/
+
+  width: 8vmin;
+  height: 8vmin; 
+  cursor: pointer; 
+  background-position: center;
+  
+  
+}
+.policko {
+    transition: background-size 0.15s;
+    background-size: 0%;
+  
+}
+
+
+.hra__policka button:hover,
+.hra__policka button:focus {
+
+    background-color:rgba(163, 105, 136, 0.3);
+
+}
+
+.board__field--circle {
+    background-image: url(images/circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%; 
+    
+}
+  
+  
+  .board__field--cross {
+    background-image: url(images/cross.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    
+  
+
+  }

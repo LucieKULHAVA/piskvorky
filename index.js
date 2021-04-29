@@ -7,7 +7,7 @@ let symbol = document.querySelector('.kolecko');
  const Hra = (event) => {
    let ctverecek = event.target;
 
-   if (ctverecek.className === 'buttonPress') {
+   if (ctverecek.className === 'policko') {
  
      if (hraje === 'circle') {
       

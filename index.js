@@ -2,7 +2,6 @@
 
 let hraje = 'circle';
 let symbol = document.querySelector('.kolecko');
-/*let ctverecek = document.querySelectorAll(".policko");*/
 
  const Hra = (event) => {
    let ctverecek = event.target;

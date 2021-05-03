@@ -26,4 +26,4 @@ let symbol = document.querySelector('.kolecko');
  };
 
  let klik = document.querySelectorAll(".policko");
- klik = addEventListener("click", Hra);
+ klik.forEach( policko => policko.addEventListener('click', Hra) );

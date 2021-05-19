@@ -27,7 +27,7 @@ let symbol = document.querySelector('.kolecko');
         if (getSymbol(ctverecek) === 'circle')
      
         {
-            const confirmation = confirm('Vyhrava koleckari, protože jsou the best',);
+            const confirmation = confirm('Vyhravaji koleckari, protože jsou the best',);
             
             if (confirmation === true) {
                 location.reload();

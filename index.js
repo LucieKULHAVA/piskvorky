@@ -35,7 +35,7 @@ let symbol = document.querySelector('.kolecko');
     
             
         } else if (getSymbol(ctverecek) === 'cross') {
-            const confirmation = confirm('Chacha koleckari, utřeli jste, haha',);
+            const confirmation = confirm('Babiš je debil',);
             if (confirmatin === true) {
                 location.reload();
             }
